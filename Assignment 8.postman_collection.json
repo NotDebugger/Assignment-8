@@ -1,0 +1,609 @@
+{
+  "info": {
+    "_postman_id": "059bc1bd-4a93-492b-b866-af82b77d5ab1",
+    "name": "Assignment 8",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "50055841",
+    "_collection_link": "https://go.postman.co/collection/50055841-059bc1bd-4a93-492b-b866-af82b77d5ab1?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "user",
+      "item": [
+        {
+          "name": "signup",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"ahmed\",\r\n    \"email\": \"ahmed@gmail.com\",\r\n    \"password\": \"1234\",\r\n    \"phone\": \"01012345678\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:3000/users/signup",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "3000",
+              "path": [
+                "users",
+                "signup"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update user info",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Moh\",\r\n    \"email\": \"moh@g.com\",\r\n    \"age\": 20\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:3000/users/6acf7ad6436bb74662aff309",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "3000",
+              "path": [
+                "users",
+                "6acf7ad6436bb74662aff309"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get user by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Moh\",\r\n    \"email\": \"moh@g.com\",\r\n    \"age\": 20\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:3000/users/6acf7ad6436bb74662aff309",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "3000",
+              "path": [
+                "users",
+                "6acf7ad6436bb74662aff309"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete user Copy",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Moh\",\r\n    \"email\": \"moh@g.com\",\r\n    \"age\": 20\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:3000/users/6acf6ea3949282bdbe6d0a97",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "3000",
+              "path": [
+                "users",
+                "6acf6ea3949282bdbe6d0a97"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"mo@gmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:3000/users/login",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "3000",
+              "path": [
+                "users",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "note",
+      "item": [
+        {
+          "name": "create note",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\": \"title 6\",\r\n    \"content\": \"content6\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:3000/notes/6acf7ad6436bb74662aff309",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "3000",
+              "path": [
+                "notes",
+                "6acf7ad6436bb74662aff309"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update note",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\": \"updated title\",\r\n    \"content\": \"updated content\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:3000/notes/6acf88ba84ce3325d839a438?userId=6acf7ad6436bb74662aff309",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "3000",
+              "path": [
+                "notes",
+                "6acf88ba84ce3325d839a438"
+              ],
+              "query": [
+                {
+                  "key": "userId",
+                  "value": "6acf7ad6436bb74662aff309"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "replace note",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\": \"updatedddd title\",\r\n    \"content\": \"updatedddd content\",\r\n    \"userId\": \"6acf92cca0f8bfbb2e7458f9\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:3000/notes/replace/6acf88ba84ce3325d839a438?userId=6acf7ad6436bb74662aff309",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "3000",
+              "path": [
+                "notes",
+                "replace",
+                "6acf88ba84ce3325d839a438"
+              ],
+              "query": [
+                {
+                  "key": "userId",
+                  "value": "6acf7ad6436bb74662aff309"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update all notes' title",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\": \"all title\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:3000/notes/all?userId=6acf7ad6436bb74662aff309",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "3000",
+              "path": [
+                "notes",
+                "all"
+              ],
+              "query": [
+                {
+                  "key": "userId",
+                  "value": "6acf7ad6436bb74662aff309"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete note",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:3000/notes/6acf890ce318260972104a1d?userId=6acf7ad6436bb74662aff309",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "3000",
+              "path": [
+                "notes",
+                "6acf890ce318260972104a1d"
+              ],
+              "query": [
+                {
+                  "key": "userId",
+                  "value": "6acf7ad6436bb74662aff309"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "paginate sort notes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:3000/notes/paginate-sort?userId=6acf7ad6436bb74662aff309&page=2&limit=2",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "3000",
+              "path": [
+                "notes",
+                "paginate-sort"
+              ],
+              "query": [
+                {
+                  "key": "userId",
+                  "value": "6acf7ad6436bb74662aff309"
+                },
+                {
+                  "key": "page",
+                  "value": "2"
+                },
+                {
+                  "key": "limit",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get note by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:3000/notes/6ad0e904cc73763c41f3209d?userId=6acf7ad6436bb74662aff309",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "3000",
+              "path": [
+                "notes",
+                "6ad0e904cc73763c41f3209d"
+              ],
+              "query": [
+                {
+                  "key": "userId",
+                  "value": "6acf7ad6436bb74662aff309"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get note by content",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:3000/notes/note-by-content?userId=6acf7ad6436bb74662aff309&content=content34",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "3000",
+              "path": [
+                "notes",
+                "note-by-content"
+              ],
+              "query": [
+                {
+                  "key": "userId",
+                  "value": "6acf7ad6436bb74662aff309"
+                },
+                {
+                  "key": "content",
+                  "value": "content34"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get note with user",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:3000/notes/note-with-user?userId=6acf7ad6436bb74662aff309",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "3000",
+              "path": [
+                "notes",
+                "note-with-user"
+              ],
+              "query": [
+                {
+                  "key": "userId",
+                  "value": "6acf7ad6436bb74662aff309"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "aggregate notes with user",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:3000/notes/aggregate?userId=6acf7ad6436bb74662aff309&title=title 4",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "3000",
+              "path": [
+                "notes",
+                "aggregate"
+              ],
+              "query": [
+                {
+                  "key": "userId",
+                  "value": "6acf7ad6436bb74662aff309"
+                },
+                {
+                  "key": "title",
+                  "value": "title 4"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete all notes",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:3000/notes?userId=6acf7ad6436bb74662aff309",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "3000",
+              "path": [
+                "notes"
+              ],
+              "query": [
+                {
+                  "key": "userId",
+                  "value": "6acf7ad6436bb74662aff309"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
